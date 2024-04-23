@@ -1,0 +1,105 @@
+<!-- Aluna: Jéssica Morgana Schmidt Gonçalves -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, tr, td, th{
+        width: 250px;
+        border: 1px solid black
+    }
+    td, th{
+        height: 80px;
+    }
+    #tab03{
+        width: 400px;
+    }
+    body{
+        grid-template-columns: auto;
+    }
+    #tab02{
+        border-spacing: 5px;
+    }
+    #tab01{
+        tbody:nth-child(even){
+            background-color: red;
+        }
+    }
+</style>
+<body>
+    <table id="tab01">
+        <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <!-- TABELA 02 -->
+    <table id="tab02">
+        <tr>
+            <th rowspan="3"></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <!-- TABELA 03 -->
+    <table id="tab03">
+        <colgroup>
+            <col style="background-color: rgb(128, 128, 128);" span="5">
+        </colgroup>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
